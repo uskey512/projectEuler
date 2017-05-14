@@ -1,7 +1,10 @@
 squareSize = 1001
-result     =    1
+result     =    0
 
-for i in range(3, squareSize + 1, 2):
-    result += 4 * i * i - 6 * (i - 1)
+for lengthOfOneSide in range(1, squareSize + 1, 2):
+    if lengthOfOneSide == 1:
+        result += 1
+    else:
+        result += 4 * lengthOfOneSide * lengthOfOneSide - 6 * (lengthOfOneSide - 1)
 
 print(result)
